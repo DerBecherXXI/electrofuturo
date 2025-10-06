@@ -14,7 +14,7 @@ console.log("Electrofuturo web lista 🚀");
 (() => {
   const form = document.getElementById('contactForm');
   const btn = document.getElementById('whatsappBtn');
-  const phone = '+5492664690679'; // número de destino ejemplo
+  const phone = '+54 9 2664 690679'; // número de destino ejemplo
 
   function validarCampos() {
     const name = form.name.value.trim();
