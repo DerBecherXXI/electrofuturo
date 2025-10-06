@@ -1,3 +1,40 @@
+// script.js - control simple del menú móvil
+(function(){
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('main-navigation');
+  if(!toggle || !nav) return;
+
+  function openNav(){
+    nav.hidden = false;
+    toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','Cerrar menú');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav(){
+    nav.hidden = true;
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Abrir menú');
+    document.body.style.overflow = '';
+  }
+
+  toggle.addEventListener('click', ()=>{
+    if(nav.hidden) openNav(); else closeNav();
+  });
+
+  // Cerrar con Escape
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape' && !nav.hidden){
+      closeNav();
+      toggle.focus();
+    }
+  });
+
+  // Cerrar al hacer click en enlace (mejor experiencia móvil)
+  nav.addEventListener('click', (e)=>{
+    if(e.target.tagName === 'A') closeNav();
+  });
+})();
+
 // Script para navegación suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
