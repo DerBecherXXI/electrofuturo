@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrofuturo - Reparación de Electrodomésticos</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Electrofuturo</div>
+      <nav>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg" style="background-image: url('img/2.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="reveal">Reparación profesional de electrodomésticos</h1>
+      <p class="lead reveal">Más de 40 años de experiencia ahora en Tilisarao, San Luis. Servicio rápido y con garantía.</p>
+      <div class="hero-cta reveal">
+        <a href="#contacto" class="btn btn-primary">Solicitá tu presupuesto</a>
+        <a href="https://wa.me/5492667654321" class="btn btn--whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <h2 class="section-title reveal">Servicios</h2>
+      <p class="section-lead reveal">Reparamos todo tipo de electrodomésticos del hogar y televisores.</p>
+
+      <div class="cards-grid">
+        <article class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-tv"></i></div>
+          <h3>Televisores</h3>
+          <p>Reparación y diagnóstico de LED, LCD y Smart TV.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3>Reparación general</h3>
+          <p>Lavarropas, cocinas, microondas y pequeños electrodomésticos.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-plug"></i></div>
+          <h3>Instalaciones y accesorios</h3>
+          <p>Venta y cambio de repuestos, controles remotos y accesorios.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Mantenimiento</h3>
+          <p>Mantenimiento preventivo y revisiones periódicas para prolongar la vida útil.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="nosotros">
+    <div class="container">
+      <h2 class="section-title reveal">Sobre Electrofuturo</h2>
+      <p class="reveal">Con más de 40 años de trayectoria, ofrecemos un servicio de confianza en Tilisarao y toda la provincia de San Luis. Nos destacamos por nuestra experiencia, atención personalizada y presupuesto gratuito.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2 class="section-title reveal">Contacto</h2>
+      <p class="section-lead reveal">Comunicate con nosotros para solicitar tu reparación:</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-envelope"></i> ejemplo@electrofuturo.com</li>
+            <li><i class="fa-solid fa-phone"></i> +54 266 1234567</li>
+            <li><i class="fa-brands fa-whatsapp"></i> +54 9 266 7654321</li>
+          </ul>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-row">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" required placeholder="Tu nombre">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="tu@ejemplo.com">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button id="whatsappBtn" type="button" class="btn btn--whatsapp"><i class="fab fa-whatsapp"></i> Enviar por WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-contacts">
+        <div class="footer-item"><i class="fa-solid fa-phone"></i> +54 266 1234567</div>
+        <div class="footer-item"><i class="fa-solid fa-envelope"></i> ejemplo@electrofuturo.com</div>
+        <div class="footer-item"><i class="fa-brands fa-whatsapp"></i> +54 9 266 7654321</div>
+      </div>
+      <div class="credits">© 2025 Electrofuturo - Tilisarao, San Luis</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
